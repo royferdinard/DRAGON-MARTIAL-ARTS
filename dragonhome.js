@@ -14,3 +14,14 @@ function displaylinks(){
     }
 }
 document.getElementsByClassName("bars")[0].addEventListener("click", displaylinks);
+
+
+window.addEventListener("load", () => {
+    setTimeout(() =>{
+        document.querySelector(".loader").style.display = "none";
+        document.querySelector(".iconimage").style.display = "none";
+        document.querySelector(".homecontainer").style.display = "block";
+        document.body.style.backgroundColor = "white";
+    }, 4000);
+    document.body.style.backgroundColor = "black"; 
+});

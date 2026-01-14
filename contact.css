@@ -224,6 +224,7 @@ header{
     padding: 1em;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     height: auto;
+    border: 1px solid gold;
 }
 .bars{
     color: gold;background-color: transparent;border-color: transparent;
