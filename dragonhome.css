@@ -40,7 +40,7 @@ body{
     height: 3rem;
     position: relative;
     margin-top: 38vh;
-    margin-left: 42vw;
+    margin-left: 47.3vw;
 }
 .iconimage img{
     width: 100%;
@@ -949,6 +949,16 @@ footer{
     .bars{
         display: block;
     }
+    .iconimage{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    position: relative;
+    margin-top: 38vh;
+    margin-left: 42vw;
+}
     .herosectionanditscontaent {
         height: 60vh;
         margin-top: 6em;
