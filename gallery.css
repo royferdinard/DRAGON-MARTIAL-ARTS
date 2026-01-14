@@ -1,0 +1,782 @@
+header{
+    display: block;
+    width: 100%;
+    height: 4em;
+    position: fixed;
+    z-index: 10;
+    background-color: white;
+    top: 0;
+    left: 0;
+    margin-top: 0;
+    /* background: linear-gradient(90deg, #222222, gold);*/
+}
+.header-section1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-right: 1em;
+    margin-top: 0;
+    top: 0;
+}
+.logoandnamecontainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    height: 4em;
+    gap: 1em;
+}
+.logoandnamecontainer img{
+    width: 5em;
+    height: 100%;
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+}
+.dragonname{
+    display: block;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.dragonname h1{
+    font-size: 1.5em;
+    font-family: 'Bebas Neue', sans-serif;
+    color: black;
+    height: 0.5em;
+    margin-bottom: 1em;
+}
+::selection{
+    background-color: gold;
+    color: black;
+    font-weight: bold;
+}
+.backtotop{
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    background-color: rgba(0, 0, 0, 0.89);
+    color: gold;
+    position: fixed;
+    bottom: 0.5em;
+    right: 0.5em;
+    z-index: 5;
+    border: 2px solid transparent;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.backtobottom{
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    background-color: rgba(0, 0, 0, 0.89);
+    color: gold;
+    position: fixed;
+    bottom: 0.5em;
+   left: 0.5em;
+    z-index: 5;
+    border: 2px solid transparent;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.backtotop:hover, .backtobottom:hover{
+    background-color: gold;
+    color: black;
+}
+#bars{
+    background-color: transparent;
+    border: 2px solid transparent;
+    color: black;
+    font-size: 2em;
+    display: none;
+    float: right;
+}
+#bars:hover, :focus, :active{
+    color: gold;
+}
+.head1button {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+.head1button.show {
+    display: flex !important;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 0.05em;
+    width: 50%;
+    background-color: white;
+    z-index: 10;
+    padding: 1em;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.head1button a{
+    text-decoration: none;
+}
+#call{
+    color: black;
+    font-weight: bold;
+    font-size: 1.3em;
+    font-family: 'Bebas Neue', sans-serif;
+     transition: all 2s ease;
+
+}
+#call:hover{
+    color: gold;
+}
+#call i{
+    color: gold;
+}
+#Programs{
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    font-family: 'Bebas Neue', sans-serif;
+    width: 8em;
+    height: 1.5em;
+    text-align: center;
+    border-radius: 20px;
+    padding-top: 0.5em;
+     transition: all 2s ease;
+}
+#Programs:hover{
+    color: gold;
+    border-color: gold;
+}
+#Join{
+    background-color: black;
+    color: gold;
+    font-family: 'Bebas Neue', sans-serif;
+    width: 8em;
+    height: 1.5em;
+    text-align: center;
+    border-radius: 20px;
+    padding-top: 0.5em;
+       transition: all 2s ease;
+
+}
+#Join:hover{
+    background-color: gold;
+    color: black;
+    border: 2px solid black;
+ 
+}
+#search{
+    background-color: white;
+    color: gold;
+    font-family: 'Bebas Neue', sans-serif;
+    width: 15em;
+    height: 2.2em;
+    text-align: center;
+    border-radius: 20px;
+    padding-top: 0.5em;
+    border: 2px solid black;
+}
+#search:hover{
+    border: 2px solid gold;
+    color: black;
+    font-weight: bold;
+}
+#search:focus{
+    background-color: gold;
+    color: black;
+    border: 2px solid black;
+    font-family: 'Bebas Neue', sans-serif;
+}
+/*end of header section 1*/
+/*start of header section2*/
+.header2buttonandbars{
+    width: 100%;
+    height: 3em;
+    background-color: black;
+}
+.header-section2.show{
+    display: flex !important;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+   left: 0;
+    margin-top: 0.05em;
+    width: 50%;
+    background-color: black;
+    z-index: 10;
+    padding: 1em;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    height: auto;
+}
+.bars{
+    color: gold;background-color: transparent;border-color: transparent;
+    float: inline-end;
+    font-size: 2rem;
+    margin-right: 1rem;
+    display: none;
+    z-index: 15;
+}
+.bars:hover{
+    color: white;
+}
+.header-section2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content:space-around;
+    background-color: black;
+    width: 100%;
+    height: 3em;
+    margin-top: 0;
+}
+.header-section2 a{
+    color: gold;
+    text-decoration: none;
+    padding: 0.2em;
+    font-family: 'Bebas Neue', sans-serif;
+    border-radius: 20px;
+}
+.header-section2 a:hover{
+    border: 2px solid gold;
+}
+.header-section2 a:focus{
+    background-color: gold;
+    color: black;
+}
+.header-section2 a:active{
+    background-color: gold;
+    color: black;
+}
+.tra{
+    perspective: 800px;
+}
+.herosectionanditscontaent{
+    width: 100%;
+    height: 75vh;
+    overflow: hidden;
+    position: relative;
+    transform-style: preserve-3d;
+    margin-top: 7em;
+}
+.herosectionanditscontaent video{
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.herocontent{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.89), rgba(0, 0, 0, 0.3));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    box-sizing: border-box;
+}
+.herocontent h1{
+       font-family: 'Bebas Neue', sans-serif;
+      font-size: 3em;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      margin-bottom: 0.5em;
+      line-height: 1.2;
+}
+.herocontent h2{
+       font-family: 'Bebas Neue', sans-serif;
+      font-size: 2em;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      margin-bottom: 0.5em;
+      line-height: 1;
+}
+.herocontent p{
+    color: white;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1em;
+        margin-bottom: 2em;
+        max-width: 1024px;
+        line-height: 1.6;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        width: 100%;
+}
+.herocontent a{
+    background-color: gold;
+    color: black;
+    border: 2px solid gold;
+    text-decoration: none;
+    padding: 1em 2em;
+    border-radius: 30px;
+     font-family: 'Bebas Neue', sans-serif;
+     font-size: 1.2em;
+     font-weight: bold;
+     transition: all 0.3s ease;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.herocontent a:hover{
+    background-color: black;
+    color: gold;
+    border-color: gold;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+.martialartimagehead{
+    width: 100%;
+    margin-top: 4rem;
+}
+.martialartimagehead h1{
+    font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.5em;
+      color: black;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      margin-bottom: 0.5em;
+      line-height: 1.2;
+      text-align: center;
+}
+.martialartimagehead hr{
+    width: 15rem;
+    border: 2px solid gold;
+}
+.martialartimagehead p{
+     color: gray;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1em;
+        margin-bottom: 2em;
+        line-height: 1.6;
+        text-align: center;
+        width: 100%;
+}
+.martialartsimage{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+    gap: 2.5rem;
+}
+.mimage{
+    width: 30%;
+    height: 15em;
+}
+.mimage img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+}
+.mimage a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    background-color: black;
+    color: gold;
+    border-color: black;
+    width: 3em;
+    height: 1.5em;
+    top: 0;
+    margin-top: 0;
+    margin-bottom: 2em;
+    font-weight: bold;
+    text-decoration: none;
+}
+.mimage a:hover{
+    background-color: gold;
+    color: black;
+}
+.lasttext{
+    margin-top: 4em;
+    position: relative;
+    width: 100%;
+    height: 20em;
+    overflow: hidden;
+}
+.lasttext img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -5;
+    object-fit: cover;
+}
+.lastcontent{
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.74);
+    padding-top: 2em;
+    text-align: center;
+}
+.lastcontent h1{
+    font-family: 'Bebas Neue', sans-serif;
+      color: white;
+      font-size: 1.5em;
+      text-align: center;
+}
+.lastcontent hr{
+    border: 2px solid gold;
+    width: 90%;
+}
+.lastcontent p{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    text-align: center;
+    padding: 2em;
+    font-size: 1em;
+    margin-bottom: 3em;
+}
+.lastcontent a{
+     background-color: black;
+    color: gold;
+    border: 2px solid gold;
+    text-decoration: none;
+    padding: 0.5em;
+    border-radius: 20px;
+     font-family: 'Bebas Neue', sans-serif;
+     text-align: center;
+}
+.lastcontent a:hover{
+    background-color: gold;
+    color: black;
+    border: 2px solid black;
+    transform: translateZ(20px);
+}
+footer{
+    width: 100%;
+    background-color: black;
+    border-top: 2px solid gold;
+    padding: 2em 1em;
+}
+.footercontent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    gap: 2em;
+}
+.footercontent img{
+    height: 15em;
+    width: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+.quick{
+    flex: 1;
+    min-width: 200px;
+}
+.quick h1{
+    font-family: 'Bebas Neue', sans-serif;
+    color: gold;
+    font-size: 1.5em;
+    text-align: left;
+    margin-bottom: 1em;
+    border-bottom: 1px solid gold;
+    padding-bottom: 0.5em;
+}
+.quicklinks{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5em;
+}
+.quicklinks a{
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 0;
+    font-family: 'Open Sans', sans-serif;
+    transition: color 0.3s ease;
+}
+.quicklinks a:hover{
+    color: gold;
+}
+.quicklinks a:focus{
+    color: gold;
+}
+.appdateform{
+    flex: 1;
+    min-width: 250px;
+    text-align: left;
+}
+.appdateform h1{
+    font-family: 'Bebas Neue', sans-serif;
+    color: gold;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid gold;
+    padding-bottom: 0.5em;
+}
+.appdateform p{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 0.9em;
+    margin-bottom: 1em;
+    line-height: 1.5;
+}
+.linksandheading{
+    flex: 1;
+    min-width: 200px;
+}
+.linksandheading h1{
+    font-family: 'Bebas Neue', sans-serif;
+    color: gold;
+    font-size: 1.5em;
+    text-align: left;
+    margin-bottom: 1em;
+    border-bottom: 1px solid gold;
+    padding-bottom: 0.5em;
+}
+.footer-social{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: flex-start;
+}
+.footer-social a{
+    color: gold;
+    text-decoration: none;
+    padding: 0.5em;
+    font-size: 1.2em;
+    border: 2px solid gold;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.footer-social a:hover{
+    background-color: gold;
+    color: black;
+    transform: scale(1.1);
+}
+.footer-social a:focus{
+    background-color: gold;
+    color: black;
+    transform: scale(1.1);
+}
+.appdateform{
+    display: block;
+    width: 20em;
+}
+.appdateform h1{
+    font-family: 'Bebas Neue', sans-serif;
+      color: white;
+      font-size: 1.5em;
+      margin-bottom: 0.5em;
+}
+.appdateform p{
+     font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 1em;
+    margin-bottom: 1em;
+    line-height: 1.5;
+}
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.appdateform input{
+    background-color: transparent;
+    color: gold;
+    border: 2px solid gold;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-right: none;
+    height: 2.6em;
+    width: 70%;
+    padding: 0 1em;
+    font-family: 'Open Sans', sans-serif;
+    outline: none;
+    transition: all 0.3s ease;
+}
+.appdateform input:hover{
+    border-color: white;
+    color: white;
+}
+.appdateform input:focus{
+    border-color: gold;
+    color: gold;
+    box-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+}
+.appdateform button{
+    background-color: gold;
+    color: black;
+    border: 2px solid gold;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-left: none;
+    height: 2em;
+    width: 30%;
+    cursor: pointer;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.2em;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.appdateform button:hover{
+    background-color: black;
+    color: gold;
+    border-color: gold;
+}
+.appdateform button i{
+    font-size: 1em;
+}
+.copyright{
+    background-color: #111;
+    padding: 1em 0;
+    border-top: 1px solid gold;
+    margin-top: 2em;
+}
+.copyright h1{
+    font-family: 'Bebas Neue', sans-serif;
+    color: gold;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 0;
+    letter-spacing: 1px;
+}
+@media (max-width: 1024px){
+    .header-section1 {
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 1em;
+        height: auto;
+        width: auto;
+        margin-bottom: 0;
+    }
+    .logoandnamecontainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    height: 4em;
+    gap: 1em;
+    }
+    
+    .dragonname h1 {
+        font-size: 1.2em;
+        margin-bottom: 0;
+    }
+    .head1button {
+        gap: 1em;
+        background-color: white;
+        display: none;
+        position: absolute;
+        text-align: center;
+    }
+    #bars{
+        display: block;
+    }
+    .backtotop , .backtobottom{
+        height: 2em;
+        width: 2em;
+    }
+    .head1button a{
+        width: 100%;
+         max-width: 300px;
+    }
+    #search {
+        width: 100%;
+        max-width: 300px;
+    }
+     .header-section2 {
+        gap: 1em;
+        background-color: white;
+        display: none;
+        position: absolute;
+        text-align: center;
+    }
+    .header-section2 a{
+        font-size: 1em;
+    }
+    .bars{
+        display: block;
+    }
+    .herosectionanditscontaent{
+        margin-top: 6.2em;
+    }
+     .herocontent h1 {
+        font-size: 1.2em;
+    }
+    .herocontent p {
+        font-size: 0.7em;
+        max-width: 90%;
+        text-align: justify;
+    }
+    .herocontent a {
+        padding: 0.8em 1.5em;
+        font-size: 0.7em;
+    }
+    .martialartsimage{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .mimage{
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    .lasttext {
+        height: 20em;
+    }
+    .footercontent {
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+        width: 100%;
+    }
+    .footercontent img {
+        height: 6em;
+        width: 100%;
+    }
+    .quicklinks {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5em;
+    }
+    .footer-social {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5em;
+    }
+    .footer-social a{
+        width: 1em;
+        height: 1em;
+    }
+    .copyright h1{
+        font-size: 1em;
+    }
+}
