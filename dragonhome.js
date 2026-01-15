@@ -22,6 +22,6 @@ window.addEventListener("load", () => {
         document.querySelector(".iconimage").style.display = "none";
         document.querySelector(".homecontainer").style.display = "block";
         document.body.style.backgroundColor = "white";
-    }, 4000);
+    }, 10000);
     document.body.style.backgroundColor = "black"; 
 });
