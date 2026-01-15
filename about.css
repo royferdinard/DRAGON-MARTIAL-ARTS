@@ -211,17 +211,6 @@ header{
     height: 3em;
     background-color: black;
 }
-.header-section2{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content:space-around;
-    background-color: black;
-    width: 100%;
-    height: 100%;
-    margin-top: 0;
-}
 .header-section2.show{
     display: flex !important;
     flex-direction: column;
@@ -231,11 +220,11 @@ header{
     margin-top: 0.05em;
     width: 50%;
     background-color: black;
-    border: 1px solid gold;
     z-index: 10;
     padding: 1em;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     height: auto;
+    border: 1px solid gold;
 }
 .bars{
     color: gold;background-color: transparent;border-color: transparent;
@@ -248,10 +237,17 @@ header{
 .bars:hover{
     color: white;
 }
-.header-section2 {
-    margin-top: 5rem;
+.header-section2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content:space-around;
+    background-color: black;
+    width: 100%;
+    height: 3em;
+    margin-top: 0;
 }
-
 .header-section2 a{
     color: gold;
     text-decoration: none;
