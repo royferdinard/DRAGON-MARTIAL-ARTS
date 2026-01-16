@@ -22,7 +22,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-     margin-top: 49vh;
+     margin-top: 47vh;
 }
 .loader h1{
     font-size: 0.6em;
@@ -340,7 +340,7 @@ header{
     overflow: hidden;
     position: relative;
     transform-style: preserve-3d;
-    margin-top: 7em;
+    margin-top: 6.5em;
 }
 .herosectionanditscontaent video{
     position: absolute;
@@ -349,6 +349,7 @@ header{
     left: 0;
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 .herocontent{
     width: 100%;
@@ -629,11 +630,13 @@ header{
     box-shadow: 0 0 5px 15px rgba(255, 217, 0, 0.432);
 }
 .lasttext{
-    margin-top: 4em;
+    margin-top: 2em;
     position: relative;
     width: 100%;
     height: 20em;
     overflow: hidden;
+    width: 100%;
+    max-width: 100vw;
 }
 .lasttext img{
     position: absolute;
@@ -960,8 +963,11 @@ footer{
     margin-left: 42vw;
 }
     .herosectionanditscontaent {
-        height: 60vh;
+        height: 40vh;
         margin-top: 6em;
+        width: 100vw;
+        left: 0;
+        margin-left: 0;
     }
     .herocontent h1 {
         font-size: 1.2em;

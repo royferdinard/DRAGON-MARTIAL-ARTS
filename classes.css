@@ -276,6 +276,7 @@ header{
     position: relative;
     transform-style: preserve-3d;
     margin-top: 7em;
+    max-width: 100vw;
 }
 .herosectionanditscontaent video{
     position: absolute;
@@ -829,6 +830,8 @@ footer{
     }
     .herosectionanditscontaent{
         margin-top: 6.2em;
+        max-width: 100vw;
+        height: 50vh;
     }
      .herocontent h1 {
         font-size: 1.2em;
@@ -871,6 +874,8 @@ footer{
     }
     .lasttext {
         height: 20em;
+        width: 100%;
+        max-width: 100vw;
     }
     .footercontent {
         flex-direction: column;
