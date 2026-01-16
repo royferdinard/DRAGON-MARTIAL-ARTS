@@ -896,9 +896,6 @@ footer{
         top: 0;
         margin-top: 0;
     }
-    body{
-        overflow-x: hidden;
-    }
     .header-section1 {
         flex-direction: row;
         align-items: center;
@@ -973,7 +970,7 @@ footer{
     margin-left: 42vw;
 }
     .herosectionanditscontaent {
-        height: 50rem;
+        height: 50%;
         margin-top: 6em;
         width: 100vw;
         left: 0;
