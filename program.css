@@ -922,6 +922,7 @@ footer{
     }
     #bars{
         display: block;
+        margin-right: 1rem;
     }
     .backtotop , .backtobottom{
         height: 2em;
@@ -947,6 +948,7 @@ footer{
     }
     .bars{
         display: block;
+        margin-right: 1rem;
     }
     .hero-text h1{
          font-size: 1.2em;

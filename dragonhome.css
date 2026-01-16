@@ -891,6 +891,9 @@ footer{
 
 /* Responsive Design */
 @media (max-width: 1024px) {
+    body{
+        overflow-x: hidden;
+    }
     .header-section1 {
         flex-direction: row;
         align-items: center;
@@ -922,6 +925,7 @@ footer{
     }
     #bars{
         display: block;
+        margin-right: 1rem;
     }
     .backtotop , .backtobottom{
         height: 2em;
@@ -951,6 +955,7 @@ footer{
     }
     .bars{
         display: block;
+        margin-right: 1rem;
     }
     .iconimage{
   display: flex;
@@ -963,7 +968,7 @@ footer{
     margin-left: 42vw;
 }
     .herosectionanditscontaent {
-        height: 40vh;
+        height: 50vh;
         margin-top: 6em;
         width: 100vw;
         left: 0;

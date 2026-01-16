@@ -1011,6 +1011,7 @@ footer{
     }
     #bars{
         display: block;
+        margin-right: 1rem;
     }
     .backtotop , .backtobottom{
         height: 2em;
@@ -1036,9 +1037,11 @@ footer{
     }
     .bars{
         display: block;
+        margin-right: 3rem;
     }
     .bars{
         display: block;
+        margin-right: 1rem;
     }
     .herosectionanditscontaent{
         margin-top: 6.2em;
