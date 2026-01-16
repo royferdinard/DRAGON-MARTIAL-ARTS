@@ -669,6 +669,11 @@ footer{
     letter-spacing: 1px;
 }
 @media (max-width: 1024px){
+     header{
+        position: fixed;
+        top: 0;
+        margin-top: 0;
+    }
     .header-section1 {
         flex-direction: row;
         align-items: center;

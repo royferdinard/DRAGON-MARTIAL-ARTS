@@ -891,6 +891,11 @@ footer{
 }
 
 @media (max-width: 1024px) {
+     header{
+        position: fixed;
+        top: 0;
+        margin-top: 0;
+    }
     .header-section1 {
         flex-direction: row;
         align-items: center;
@@ -922,7 +927,7 @@ footer{
     }
     #bars{
         display: block;
-        margin-right: 1rem;
+        margin-right: 2rem;
     }
     .backtotop , .backtobottom{
         height: 2em;
@@ -948,7 +953,7 @@ footer{
     }
     .bars{
         display: block;
-        margin-right: 2rem;
+        margin-right: 3rem;
     }
     .hero-text h1{
          font-size: 1.2em;
